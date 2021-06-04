@@ -1,0 +1,20 @@
+/*
+COLORS:
+
+Light green: #7ed56f
+Medium green: #55c57a
+Dark green: #28b485
+
+*/
+/* this is the resetting of the web browser and default font setting for the page*/
+@import "abstracts/mixins";
+@import "abstracts/functions";
+@import "abstracts/variables";
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+@import "pages/home";
+@import "Components/button";
+@import "layout/header";
+@import "layout/grid";
