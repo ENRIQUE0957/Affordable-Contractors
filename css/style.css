@@ -347,3 +347,9 @@ body {
 .composition:hover .composition__photo:not(:hover) {
   transform: scale(0.95);
 }
+.feature-box {
+}
+.feature-box__icon {
+}
+.feature-box_text {
+}
