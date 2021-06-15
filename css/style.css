@@ -423,11 +423,18 @@ body {
   left: 0;
   width: 100%;
   backface-visibility: hidden;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
 }
 .card__side--front {
   background-color: #ffff;
 }
 .card__side--back {
-  background-color: palegreen;
   transform: rotateY(180deg);
+}
+.card__side--back-1 {
+  background-image: linear-gradient(
+    to right bottom,
+    yellow,
+    rgba(255, 255, 255, 0.659)
+  );
 }
