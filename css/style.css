@@ -438,3 +438,9 @@ body {
     rgba(255, 255, 255, 0.659)
   );
 }
+/*This is for the cards images and text box and the title of the card */
+.card_picture {
+}
+.card__picture--1 {
+  background-image: url(../img/nat-5.img);
+}
