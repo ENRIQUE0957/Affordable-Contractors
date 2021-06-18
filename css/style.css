@@ -400,7 +400,7 @@ body {
 /*SAection TOURS SECTION TOURS */
 .section-tours {
   background-color: rgba(192, 192, 192, 0.2);
-  padding: 20rem 0 50rem 0;
+  padding: 20rem 0 15rem 0;
   margin-top: -10rem;
 }
 .card {
@@ -561,4 +561,48 @@ body {
 .card_price-value {
   font-size: 6rem;
   font-weight: 100;
+}
+.btn--green {
+  background-color: rgb(205, 200, 63);
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.5rem 3rem;
+  border-radius: 10rem;
+  font-size: 1.6rem;
+  animation-name: moveInBottom;
+  animation-duration: 1s;
+}
+
+/*SECTION-STORIES SECTION STORIES SECTION STORIES SECTION STORIES*/
+.section-stories {
+  padding: 15rem 15rem;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+.story {
+  width: 75%;
+  margin: 0 auto;
+  box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.145);
+  background-color: white;
+  border-radius: 3px;
+  padding: 6rem;
+  padding-left: 9rem;
+  font-size: 1.3rem;
+  transform: skewX(-12deg);
+}
+.story_shape {
+  width: 13rem;
+  height: 13rem;
+  float: left;
+  -webkit-shape-outside: circle(50% at 50% 50%);
+  shape-outside: circle(50% at 50% 50%);
+  clip-path: circle(50% at 50% 50%);
+  transform: translateX(-3rem) skewX(12deg);
+}
+.story_text {
+  transform: skewX(12deg);
+}
+.story_img {
+  width: 100%;
+  height: 100%;
 }
