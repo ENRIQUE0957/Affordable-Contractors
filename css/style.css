@@ -181,7 +181,7 @@ body {
 
 .row {
   max-width: 114rem; /*$grid-width;*/
-  background-color: #eee;
+  /*background-color: #eee;*/
   margin: 0 auto;
   /*$gutter-vertical*/
 }
@@ -252,8 +252,8 @@ body {
   display: inline-block;
   background-image: linear-gradient(
     to right,
-    rgba(209, 206, 13, 0.253),
-    rgba(66, 65, 7, 0.253)
+    rgba(240, 236, 9, 0.864),
+    rgba(128, 128, 117, 0.912)
   );
   -webkit-background-clip: text;
   background-clip: text;
@@ -577,13 +577,13 @@ body {
 /*SECTION-STORIES SECTION STORIES SECTION STORIES SECTION STORIES*/
 .section-stories {
   padding: 15rem 15rem;
-  background-color: rgba(0, 0, 0, 0.15);
+  position: relative;
 }
 .story {
   width: 75%;
   margin: 0 auto;
   box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.145);
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.624);
   border-radius: 3px;
   padding: 6rem;
   padding-left: 9rem;
@@ -598,11 +598,81 @@ body {
   shape-outside: circle(50% at 50% 50%);
   clip-path: circle(50% at 50% 50%);
   transform: translateX(-3rem) skewX(12deg);
+  position: relative;
+  backface-visibility: hidden;
 }
 .story_text {
   transform: skewX(12deg);
 }
 .story_img {
+  height: 100%;
+  transform: translateX(-4rem) scale(1.4);
+  backface-visibility: hidden;
+}
+.story_caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 20%);
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  text-align: center;
+  opacity: 0;
+  transition: all 0.5s;
+  backface-visibility: hidden;
+}
+.story:hover .story_caption {
+  opacity: 1;
+  transform: translate(-50%, -50%);
+  backface-visibility: hidden;
+}
+.story:hover .story_img {
+  transform: scale(1) translateX(-4rem);
+  backface-visibility: hidden;
+  filter: blur(3px) brightness(80%);
+  backface-visibility: hidden;
+}
+
+.bg-video {
+  position: absolute;
   width: 100%;
   height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  opacity: 0.15;
+  overflow: hidden;
+}
+.bg-video__content {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/*section for booking SECTION FOR BOOKING SECTION FOR BOOKING SECTION FOR BOOKING*/
+.section-book {
+  padding: 15rem 0;
+  background-image: linear-gradient(
+    to right bottom,
+    yellow,
+    rgba(255, 255, 255, 0.659)
+  );
+}
+.book {
+  background-image: linear-gradient(
+      105deg,
+      rgba(255, 255, 255, 0.9) 0%,
+      rgba(255, 255, 255, 0.9) 50%,
+      transparent 50%
+    ),
+    url(../img/nat-10.jpg);
+  background-size: 100%;
+  height: 50rem;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+}
+.book_form {
+  width: 50%;
+  padding: 6rem;
 }
