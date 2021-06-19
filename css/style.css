@@ -676,3 +676,32 @@ body {
   width: 50%;
   padding: 6rem;
 }
+
+.form {
+}
+.form__input {
+  font-size: 1.5rem;
+  padding: 1.5rem 2rem;
+  border-radius: 2px;
+  border: none;
+  font-family: inherit;
+  border-bottom: 3px solid transparent;
+  width: 90%;
+  display: block;
+  color: inherit;
+}
+.form__label {
+}
+.form__input {
+}
+.form_group:not(:last-child) {
+  margin-bottom: 2rem;
+}
+.form__input:focus {
+  outline: none;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  border-bottom: 3px solid peru;
+}
+.form__input::-webkit-input-placeholder {
+  color: rgb(123, 123, 123);
+}
