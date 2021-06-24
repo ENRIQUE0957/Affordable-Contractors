@@ -965,3 +965,40 @@ body {
   transform: rotate(-135deg);
   top: 0;
 }
+.popup {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+.popuP-content {
+  background-color: rgb(255, 254, 254);
+  position: absolute;
+  width: 75%;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 3px;
+  display: table;
+}
+.popup_left {
+  width: 33.333333%;
+  display: table-cell;
+}
+.popup__right {
+  width: 66.6667%;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.popup_img {
+  display: block;
+  width: 100%;
+  display: table-cell;
+}
+.popup_text {
+}
