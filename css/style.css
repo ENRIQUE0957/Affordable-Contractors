@@ -880,7 +880,6 @@ body {
 .navigation_link {
 }
 .navigation__checkbox {
-  display: none;
 }
 .navigation_link:visited,
 .navigation_link:link {
@@ -955,5 +954,14 @@ body {
 .navigation__button:hover .navigation-icon:after {
   top: 1rem;
 }
-.navigation:checked + .navigation__button .navigation_icon {
+.navigation__checkbox:checked + .navigation__button .navigation-icon {
+  background-color: transparent;
+}
+.navigation__checkbox:checked + .navigation__button .navigation-icon::before {
+  transform: rotate(135deg);
+  top: 0;
+}
+.navigation__checkbox:checked + .navigation__button .navigation-icon::after {
+  transform: rotate(-135deg);
+  top: 0;
 }
