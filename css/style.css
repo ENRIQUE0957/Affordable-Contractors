@@ -973,7 +973,6 @@ body {
   top: 0;
   left: 0;
   z-index: 9999;
-  display: none;
 }
 .popuP-content {
   background-color: rgb(255, 254, 254);
@@ -985,7 +984,7 @@ body {
   transform: translate(-50%, -50%);
   border-radius: 3px;
   display: table;
-  display: none;
+  overflow: hidden;
 }
 .popup_left {
   width: 33.333333%;
@@ -995,6 +994,7 @@ body {
   width: 66.6667%;
   display: table-cell;
   vertical-align: middle;
+  padding: 3rem 5rem;
 }
 
 .popup_img {
@@ -1003,4 +1003,10 @@ body {
   display: table-cell;
 }
 .popup_text {
+  font-size: 1.4rem;
+  margin-bottom: 4rem;
+  column-count: 2;
+  column-gap: 4rem;
+  column-rule: 1px solid rgb(197, 197, 197);
+  hyphens: auto;
 }
