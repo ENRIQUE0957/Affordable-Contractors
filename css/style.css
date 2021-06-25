@@ -973,6 +973,7 @@ body {
   top: 0;
   left: 0;
   z-index: 9999;
+  display: none;
 }
 .popuP-content {
   background-color: rgb(255, 254, 254);
@@ -984,6 +985,7 @@ body {
   transform: translate(-50%, -50%);
   border-radius: 3px;
   display: table;
+  display: none;
 }
 .popup_left {
   width: 33.333333%;
