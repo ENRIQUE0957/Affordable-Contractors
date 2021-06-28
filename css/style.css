@@ -977,20 +977,18 @@ body {
   visibility: hidden;
   transition: all 0.3s;
 }
-.popup_content {
+.popup__content {
   background-color: rgb(255, 254, 254);
   position: absolute;
   width: 75%;
-
+  opacity: 0;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(0.5);
   border-radius: 3px;
   display: table;
   overflow: hidden;
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.3s;
+  transition: all 0.4s 0.2s;
 }
 .popup_left {
   width: 33.333333%;
@@ -1020,7 +1018,23 @@ body {
   opacity: 1;
   visibility: visible;
 }
-.popup-content:target{
+.popup-close,
+.popup-close:link,
+.popup-close:visited {
+  color: grey;
+  position: absolute;
+  top: 2.5rem;
+  right: 1.5rem;
+  font-size: 3rem;
+  transition: all 0.2s;
+  line-height: 1;
+}
+.popup-close:hover {
+  color: red;
+}
+/*FOR THE EFFECT OF THE ANIMATION OF THE CONTENT POPUP TO COME AT US WHEN WE 
+CLLICK ON THE BUTTON*/
+.popup:target .popup__content {
   opacity: 1;
-  visibility: visible;
+  transform: translate(-50%, -50%) scale(1);
 }
