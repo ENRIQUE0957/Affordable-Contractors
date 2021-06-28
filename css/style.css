@@ -973,8 +973,11 @@ body {
   top: 0;
   left: 0;
   z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
 }
-.popuP-content {
+.popup_content {
   background-color: rgb(255, 254, 254);
   position: absolute;
   width: 75%;
@@ -985,6 +988,9 @@ body {
   border-radius: 3px;
   display: table;
   overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
 }
 .popup_left {
   width: 33.333333%;
@@ -1009,4 +1015,12 @@ body {
   column-gap: 4rem;
   column-rule: 1px solid rgb(197, 197, 197);
   hyphens: auto;
+}
+.popup:target {
+  opacity: 1;
+  visibility: visible;
+}
+.popup-content:target{
+  opacity: 1;
+  visibility: visible;
 }
