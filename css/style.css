@@ -1038,3 +1038,15 @@ CLLICK ON THE BUTTON*/
   opacity: 1;
   transform: translate(-50%, -50%) scale(1);
 }
+
+/* 0-600px phone screen 
+600px-900px tablet portrait
+900px-1200px: tablet landscape
+1200-1800px is where our normal desktop is 
+1800px + big desktop
+*/
+@media (max-width: 600px) {
+  html {
+    font-size: 50%;
+  }
+}
