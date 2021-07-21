@@ -1070,7 +1070,7 @@ CLLICK ON THE BUTTON*/
     margin-bottom: 5rem;
   }
   .row {
-    width: 50rem;
+    width: 40rem;
     padding: 0 3rem;
   }
   .footer__navigation {
@@ -1289,6 +1289,13 @@ CLLICK ON THE BUTTON*/
   }
   .story_shape {
     transform: skewX(0) translateX(-2rem);
+  }
+  .row {
+    width: 30rem;
+    padding: 0 2.5rem;
+  }
+  .btn--green1 {
+    margin-top: 0.1rem;
   }
 }
 
