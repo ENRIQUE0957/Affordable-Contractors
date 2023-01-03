@@ -14,10 +14,18 @@
     <meta class="viewport" content = "width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
-
+    <!-- React scripts to load react and create the file for our react component-->
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+  
+    <!-- Load our React component. -->
+  
     <title>Affordable contractors</title>
   </head>
+  <div id = "like_button_container"></div>
+  <script src="like_button.js"></script>
   <body>
+    
     <div class="navigation">
       <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
       <label for="navi-toggle" class="navigation__button">
@@ -353,8 +361,8 @@
                   </h2>
                   </div>
                 <div class="form_group">
-                  <input type="text" class="form__input" placeholder="Full Name" id = "name" required>
-                  <label for="name" class="form__label">Full name</label>
+                  <input type="text" class="form__input" placeholder="Full Name" id = "Name" required>
+                  <label for="Name" class="form__label">Full name</label>
                 </div>
 
                 <div class="form_group">
@@ -402,7 +410,7 @@
             <li class="footer_item"><a href="#" class="footer_link">Company</a></li>
             <li class="footer_item"><a href="#" class="footer_link">Contact us</a></li>
             <li class="footer_item"><a href="#" class="footer_link">Privacy</a></li>
-            <li class="footer_item"><a href="#" class="footer_link">Carrer</a></li>
+            <li class="footer_item"><a href="#" class="footer_link">Career</a></li>
             <li class="footer_item"><a href="#" class="footer_link">Terms</a></li>
           </ul>    
 
@@ -438,6 +446,7 @@
          <a href="#" class="btn btn--green">
            Sing up now!
          </a>
+         
         </div>
       </div>
     </div>
@@ -472,5 +481,6 @@
         <div class="col-3-of-4">col 3 of 4</div>
       </div>
     </section>
+    
   --></body>
 </html>
